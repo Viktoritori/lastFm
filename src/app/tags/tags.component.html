@@ -1,0 +1,6 @@
+<div  class="container">
+  <div class="container_card" *ngFor="let tag of tags">
+    <a class="container_card_ref" [routerLink]="['/album/', tag.name]">{{tag.name}}</a>
+    <img [src]="tag.imageUrl" [routerLink]="['/album/', tag.name]" alt="">
+  </div>
+</div>

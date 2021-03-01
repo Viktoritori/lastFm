@@ -1,0 +1,74 @@
+.container {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.container_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.container_right_items {
+  display: flex;
+  flex-grow: 1;
+  color: white;
+  font-family: "Calibri Light", sans-serif;
+  font-size: 35px;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+.container_album {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+}
+.album {
+  position: relative;
+  color: white;
+  margin-bottom: 35px;
+  margin-right: 2%;
+}
+.album_card {
+  position: relative;
+}
+.album_card_names {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  color: white;
+  font-family: "Calibri Light", sans-serif;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+}
+.img_width {
+  width: 250px;
+  border-radius: 7px;
+}
+.container_heart {
+  display: flex;
+  flex-grow: 10;
+  justify-content: flex-end;
+  position: relative;
+}
+.heart {
+  font-size: 14px;
+  background: blueviolet;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  font-family: sans-serif;
+  color: white;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <header class="container_header color">
+    <div class="container_right_items">
+      <a href="/">Back</a>
+    </div>
+    <div class="container_heart">
+      <a [routerLink]="['/favorite']">
+        <img src="/assets/img/favorite-2-32.png" alt="heart" width="25">
+      </a>
+      <p class="heart">{{favoriteTags.length}}</p>
+    </div>
+  </header>
+
+  <div class="container_album">
+    <div class="album" *ngFor="let favoriteTag of favoriteTags">
+      <div class="album_card">
+        <img class="img_width" [src]="favoriteTag.image[3]['#text']" alt="">
+      </div>
+    </div>
+  </div>
+</div>
